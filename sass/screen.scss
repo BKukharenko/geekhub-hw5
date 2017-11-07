@@ -1,0 +1,741 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$blue: #135ec5;
+$white: #fff;
+$light-black: #131210;
+$gray: #3c3c3c;
+$light-gray: #c1c1c1;
+
+body {
+	font-family: Montserrat;
+}
+
+.logo {
+	line-height: 50px;
+	display: inline-block;
+	padding-left: 100px;
+	padding-top: 60px;
+}
+
+#main-header {
+	background-color: $light-black;
+	.contacts-list {
+		margin-right: 80px;
+		line-height: 50px;
+		list-style: none;
+		float: right;
+		color: $white;
+
+		a {
+			text-transform: uppercase;
+			color: $blue;
+			text-decoration: none;
+		}
+
+		li {
+			margin-top: 70px;
+			padding-left: 40px;
+			float: left;
+			display: block;
+		}
+
+		.email {
+			padding-right: 40px;
+			background: url('../images/img_email.png') no-repeat 0% 50%;
+			
+		}
+
+		.phone {
+			padding-right: 40px;
+			background: url('../images/img_phone.png') no-repeat 0% 50%;
+		}
+
+		.log-in {
+			padding-right: 40px;
+			font-weight: 700;
+			background: $white;
+			border-radius: 80px;
+
+		}
+	}
+}
+
+#top-mercedes-section {
+	padding-top: 100px;
+	background-color: $light-black;
+
+	.background-text {
+		overflow: hidden;
+		line-height: 160px;
+		text-transform: uppercase;
+		font-size: 185px;
+		font-weight: 700;
+		text-align: center;
+		color: #161513;
+
+		.car-text {
+			padding-left: 400px;
+
+		}
+	}
+
+	img {
+		position: relative;
+		z-index: 1000;
+		left: 550px;
+		bottom: 250px;
+	}
+
+	.top-car-buying-text {
+		text-align: center;
+		font-weight: 700;
+		color: $white;
+		font-size: 18px;
+		padding-top: 0px;
+	}
+
+	.vertical-dots {
+			float: right;
+  			font-size: 100px;
+  			color: $gray;
+  			margin-right: 80px;
+
+  			&:nth-child(2) {	//Попытался сделать второй маркер синим, но почему-то не сработало
+  				color: $blue;
+  			}
+	}
+
+}
+
+.top-search-form {
+	background-color: $light-black;
+	margin-top: 50px;
+	padding-left: 230px;
+	padding-bottom: 100px;
+
+	.top-search-field {
+		border-width: thin;
+		border-color: $gray;
+		border-top-style: none;
+		border-left-style: none;
+		border-right-style: none;
+		margin-right: 100px;
+		height: 50px;
+		width: 325px;
+		background-color: $light-black;
+		}
+
+	input [type="text"]::-moz-placeholder {
+		font-size: 30px;
+		font-weight: 700;
+		color: $gray;
+	}
+
+   input[type="text"]::-webkit-input-placeholder { 
+   		font-size: 30px;
+   		font-weight: 700;
+   		color: $gray; 
+   	}
+
+   	input[type="text"]:-ms-input-placeholder { 
+   		font-size: 30px;
+   		font-weight: 700;
+   		color: $gray;
+	}
+
+   	input[type="text"]::-ms-input-placeholder { 
+   		font-size: 30px;
+   		font-weight: 700;
+   		color: $gray;
+	}
+
+   	input[type="text"]::placeholder { 
+   		font-size: 30px;
+   		font-weight: 700;
+   		color: $gray;
+	} 
+
+	.top-search-button {
+		font: 700 16px Montserrat;
+		background-color: $blue;
+		border-radius: 50px;
+		border-style: none;
+		color: $white;
+		text-transform: uppercase;
+		padding: 25px 75px;
+	}
+}
+
+#bmw-series-section {
+	background-color: $white;
+	overflow: hidden;
+
+	.bmw-top-text {
+		padding-top: 60px;
+		text-align: center;
+		color: $light-gray;
+		font-size: 18px;
+	}
+
+	.auto-logos {
+		margin-top: 75px;
+		padding-bottom: 60px;
+		float: left;
+		border-bottom: 1px solid $light-gray;
+
+		li {
+			float: left;
+			padding-left: 100px;
+			padding-right: 85px;
+			display: block;
+		}
+	}
+
+
+	.bmw-series-text {
+		width: 40%;
+		float: right;
+		margin-top: 175px;
+
+		a{
+			text-decoration: none;
+			color: $white;
+		}
+
+		.bmw-series-header {
+			font-weight: 700;
+			font-size: 60px;
+			color: $blue;
+		}
+
+		.bmw-descrip {
+			font: 300 16px Open Sans;
+			color: $light-gray;
+			padding-top: 50px;
+			line-height: 50px;
+		}
+
+		.bmw-series-button {
+			display: inline-block;
+			font-weight: 700;
+			font-size: 16px;
+			background-color: $blue;
+			text-transform: uppercase;
+			margin-top: 65px;
+			padding: 25px 30px;
+			border-radius: 50px;
+		}
+	}
+
+	.bmw-series-img {
+		margin-top: 150px;
+		float: left;
+		width: 60%;
+
+		.bmw-back-text {
+			color: #fff;
+			text-shadow: 10px 10px 10px #f7f7f7;
+			text-align: center;
+			font-weight: 700;
+			font-size: 175px;
+			text-transform: uppercase;
+		}
+
+		.series {
+			padding-left: 295px;
+		}
+
+		img {
+			position: relative;
+			z-index: 1000;
+			left: 350px;
+			bottom: 250px;
+		}
+	}
+}
+
+#announcement-section {
+	background: $blue;
+
+
+
+	.announcement-header {
+		text-align: center;
+		font-weight: 700;
+		color: $white;
+		font-size: 60px;
+		padding-top: 150px;
+	}
+
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+
+	.add-now-button-container {
+		text-align: center;
+	}
+
+	.add-now-button {
+		display: inline-block;
+		text-align: center;
+		margin-top: 85px;
+		font-weight: 700;
+		text-transform: uppercase;
+		border: 3px $white; solid;
+		border-radius: 50px;
+		padding: 20px 60px;
+	}
+
+	img {
+		position: relative;
+		z-index: 1000;
+		left: 600px;
+		top: 100px;
+
+	}
+}
+
+#ads-section {
+	background-color: $white;
+	overflow: hidden;
+
+	.big-ad {
+		float: right;
+		background: linear-gradient(to right, $white 0%,$white 60%,$blue 60%,$blue 100%);
+		box-shadow: 0 0 50px #e2e2e2;
+		margin-top: 200px;
+		margin-right: 20px;
+		margin-bottom: 150px;
+	}
+}
+
+.big-ad {
+
+	.big-ad-left {
+			float: left;
+			width: 40%;
+			margin-top: 60px;
+			margin-left: 60px;
+
+			.big-ad-top-text{
+				font-weight: 700;
+				font-size: 14px;
+				color: #e2e2e2;
+			}
+
+			.big-ad-price {
+				font-weight: 700;
+				font-size: 30px;
+				color: #16ad2c;
+				float: right;
+			}
+
+			.big-ad-header {
+				padding-top: 140px;
+				font-weight: 700;
+				font-size: 30px;
+				color: $blue;
+
+			}
+
+			.big-ad-descrip {
+				padding-top: 50px;
+				line-height: 50px;
+				width: 90%;
+				font-family: Open Sans;
+				font-size: 16px;
+				color: $light-gray;
+			}
+
+			a {
+				text-decoration: none;
+				color: $white;
+			}
+
+			.big-ad-order-button {
+				margin-top: 80px;
+				margin-bottom: 95px;
+				padding: 25px 60px;
+				display: inline-block;
+				background-color: $blue;
+				text-align: center;
+				font-weight: bold;
+				border-radius: 50px;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+		}
+
+		.big-ad-right {
+			margin-top: 60px;
+
+			a {
+				text-decoration: none;
+				color: $blue;
+			}
+
+			.big-ad-fresh-button {
+				float: right;
+				margin-right: 30px;
+				font-weight: 700;
+				text-transform: uppercase;
+				background-color: $white;
+				padding: 10px 20px;
+				border-radius: 50px;
+			}
+
+			img {
+				float: right;
+				height: 365px;
+				width: 525px;
+				margin-top: 80px;
+			}
+
+		}
+}
+
+.small-ad {
+	position: relative;
+	float: left;
+	margin-top: 250px;
+	margin-left: 160px;
+	background: linear-gradient(to bottom, $blue 0%,$blue 35%, $white; 35%, $white; 100%);
+	box-shadow: 0 0 50px #e2e2e2;
+
+
+	.furie {
+		position: relative;
+		z-index: 1;
+		font-weight: 700;
+		font-size: 158px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		color: $blue;
+		text-transform: uppercase;
+		text-shadow: 0 0 1px #4479c2;
+	}
+
+	a {
+		text-decoration: none;
+		color: $blue;
+	}
+
+	.small-ad-fresh-button {
+		position: relative;
+		z-index: 100;
+		top: 50px;
+		float: right;
+		margin-right: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+		background-color: $white;
+		padding: 10px 20px;
+		border-radius: 50px;
+	}
+
+	img {
+		position: relative;
+		z-index: 1000;
+		left: 100px;
+		bottom: 90px;
+	}
+
+	.small-ad-header {
+		text-align: center;
+		font-weight: 700;
+		font-size: 30px;
+		color: black;
+	}
+
+	.small-ad-category {
+		margin-top: 20px;
+		display: block;
+		text-align: center;
+		font-weight: 700;
+		font-size: 14px;
+		color: $blue;
+	}
+
+	.small-ad-descrip {
+		text-align: center;
+		font-weight: 300;
+		margin-top: 20px;
+		color: $light-gray;
+	}
+
+	.small-ad-price {
+		display: inline-block;
+		font-weight: 700;
+		font-size: 30px;
+		color: #16ad2c;
+		margin-left: 50px;
+		margin-top: 30px;
+	}
+
+	.small-ad-bottom {
+
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+	.small-ad-more-button {
+		float: right;
+		margin-top: 30px;
+		margin-bottom: 45px;
+		margin-right: 50px;
+		background-color: #e2e2e2;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 18px;
+		padding: 15px 40px;
+		border-radius: 50px;
+	}
+
+
+}
+
+#search-section {
+	.search-form-container {
+		text-align: center;
+		margin: 150px 250px;
+		background: linear-gradient(to bottom, $white; 0%, $white; 60%, $blue; 60%, $blue; 100%);
+		box-shadow: 0 0 50px #e2e2e2;
+	}
+}
+
+.main-search-form {
+	
+	.top-main-search-field {
+		border-width: thin;
+		border-color: $light-gray;
+		border-top-style: none;
+		border-left-style: none;
+		border-right-style: none;
+		margin-left: 25px;
+		margin-right: 25px;
+		margin-top: 50px;
+		height: 45px;
+		width: 295px;
+		background-color: $white;
+
+			&::-moz-placeholder {
+			font-size: 18px;
+			font-weight: 700;
+			color: $light-gray;
+		}
+
+	   		&::-webkit-input-placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: $light-gray; 
+	   	}
+
+	   		&:-ms-input-placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: $light-gray;
+		}
+
+	   		&::-ms-input-placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: $light-gray;
+		}
+
+	   		&::placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: $light-gray; 
+		} 
+}
+	.top-main-search-field-location {
+		border-width: thin;
+		border-color: $light-gray;
+		border-top-style: none;
+		border-left-style: none;
+		border-right-style: none;
+		margin-left: 25px;
+		margin-right: 25px;
+		height: 45px;
+		width: 295px;
+		background: $white; url('../images/img_location.png') no-repeat 100% 50%;
+
+
+			&::-moz-placeholder {
+			font-size: 18px;
+			font-weight: 700;
+			color: black;
+		}
+
+	   		&::-webkit-input-placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: black; 
+	   	}
+
+	   		&:-ms-input-placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: black; 
+		}
+
+	   		&::-ms-input-placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: black; 
+		}
+
+	   		&::placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: black; 
+		} 
+	}
+
+	.auto-logos-main-search {
+		text-align: center;
+		margin-top: 75px;
+		padding-bottom: 60px;
+		float: left;
+		border-top: 1px solid $light-gray;
+
+		li {
+			float: left;
+			display: block;
+			padding-top: 45px;
+			padding-left: 35px;
+			padding-right: 80px;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+
+	.advanced-search-button {
+		display: inline-block;
+		margin-top: 100px;
+		font-weight: 700;
+		font-size: 18px;
+		padding: 15px 25px;
+		background-color: $blue;
+		border-radius: 20px;
+	}
+}
+
+.detailed-characteristics {
+
+	.top-main-search-field-detailed {
+		border-width: thin;
+		border-color: $light-gray;
+		border-top-style: none;
+		border-left-style: none;
+		border-right-style: none;
+		margin-left: 25px;
+		margin-right: 25px;
+		margin-top: 50px;
+		height: 45px;
+		width: 295px;
+		background-color: $blue;
+
+			&::-moz-placeholder {
+			font-size: 18px;
+			font-weight: 700;
+			color: $light-gray;
+		}
+
+	   		&::-webkit-input-placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: $light-gray;
+	   	}
+
+	   		&:-ms-input-placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: $light-gray;
+		}
+
+	   		&::-ms-input-placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: $light-gray; 
+		}
+
+	   		&::placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: $light-gray;
+		} 
+	}
+
+	.top-main-search-field-transmission {
+		border-width: thin;
+		border-color: $light-gray;
+		border-top-style: none;
+		border-left-style: none;
+		border-right-style: none;
+		margin-left: 25px;
+		margin-right: 25px;
+		height: 45px;
+		width: 295px;
+		background-color: $blue;
+
+			&::-moz-placeholder {
+			font-size: 18px;
+			font-weight: 700;
+			color: $white;
+		}
+
+	   		&::-webkit-input-placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: $white; 
+	   	}
+
+	   		&:-ms-input-placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: $white; 
+		}
+
+	   		&::-ms-input-placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: $white; 
+		}
+
+	   		&::placeholder { 
+	   		font-size: 18px;
+	   		font-weight: 700;
+	   		color: $white;
+		} 
+	}
+
+	.main-search-button {
+		font: 700 16px Montserrat;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		text-transform: uppercase;
+		background-color: $white;
+		color: $blue;
+		padding: 10px 20px;
+		border-radius: 50px;
+		border-style: none;
+		padding: 20px 75px;
+	}
+}
+
+
