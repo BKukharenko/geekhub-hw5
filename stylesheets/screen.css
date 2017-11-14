@@ -69,12 +69,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 body {
   font-family: Montserrat;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 .logo {
   line-height: 50px;
   display: inline-block;
@@ -82,11 +82,11 @@ body {
   padding-top: 60px;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 #main-header {
   background-color: #131210;
 }
-/* line 26, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 #main-header .contacts-list {
   margin-right: 80px;
   line-height: 50px;
@@ -94,62 +94,60 @@ body {
   float: right;
   color: #fff;
 }
-/* line 33, ../sass/screen.scss */
-#main-header .contacts-list a {
-  text-transform: uppercase;
-  color: #135ec5;
-  text-decoration: none;
-}
-/* line 39, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 #main-header .contacts-list li {
   margin-top: 70px;
   padding-left: 40px;
   float: left;
   display: block;
 }
-/* line 46, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 #main-header .contacts-list .email {
   padding-right: 40px;
   background: url("../images/img_email.png") no-repeat 0% 50%;
 }
-/* line 52, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
+#main-header .contacts-list .email a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 55, ../sass/screen.scss */
 #main-header .contacts-list .phone {
   padding-right: 40px;
   background: url("../images/img_phone.png") no-repeat 0% 50%;
 }
-/* line 57, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
+#main-header .contacts-list .phone a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 66, ../sass/screen.scss */
 #main-header .contacts-list .log-in {
   padding-right: 40px;
   font-weight: 700;
   background: #fff;
   border-radius: 80px;
 }
+/* line 72, ../sass/screen.scss */
+#main-header .contacts-list .log-in a {
+  text-transform: uppercase;
+  color: #135ec5;
+  text-decoration: none;
+}
 
-/* line 67, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 #top-mercedes-section {
   padding-top: 100px;
-  background-color: #131210;
-}
-/* line 71, ../sass/screen.scss */
-#top-mercedes-section .background-text {
-  overflow: hidden;
-  line-height: 160px;
-  text-transform: uppercase;
-  font-size: 185px;
-  font-weight: 700;
-  text-align: center;
-  color: #161513;
-}
-/* line 80, ../sass/screen.scss */
-#top-mercedes-section .background-text .car-text {
-  padding-left: 400px;
+  background: #131210 url("../images/img_top_background_text.png") no-repeat;
 }
 /* line 86, ../sass/screen.scss */
 #top-mercedes-section img {
-  position: relative;
-  z-index: 1000;
-  left: 550px;
-  bottom: 250px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-right: 200px;
 }
 /* line 93, ../sass/screen.scss */
 #top-mercedes-section .top-car-buying-text {
@@ -157,7 +155,7 @@ body {
   font-weight: 700;
   color: #fff;
   font-size: 18px;
-  padding-top: 0px;
+  margin-top: 150px;
 }
 /* line 101, ../sass/screen.scss */
 #top-mercedes-section .vertical-dots {
@@ -166,19 +164,15 @@ body {
   color: #3c3c3c;
   margin-right: 80px;
 }
-/* line 107, ../sass/screen.scss */
-#top-mercedes-section .vertical-dots:nth-child(2) {
-  color: #135ec5;
-}
 
-/* line 114, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .top-search-form {
   background-color: #131210;
   margin-top: 50px;
   padding-left: 230px;
   padding-bottom: 100px;
 }
-/* line 120, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .top-search-form .top-search-field {
   border-width: thin;
   border-color: #3c3c3c;
@@ -190,37 +184,37 @@ body {
   width: 325px;
   background-color: #131210;
 }
-/* line 132, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .top-search-form input [type="text"]::-moz-placeholder {
   font-size: 30px;
   font-weight: 700;
   color: #3c3c3c;
 }
-/* line 138, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .top-search-form input[type="text"]::-webkit-input-placeholder {
   font-size: 30px;
   font-weight: 700;
   color: #3c3c3c;
 }
-/* line 144, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .top-search-form input[type="text"]:-ms-input-placeholder {
   font-size: 30px;
   font-weight: 700;
   color: #3c3c3c;
 }
-/* line 150, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .top-search-form input[type="text"]::-ms-input-placeholder {
   font-size: 30px;
   font-weight: 700;
   color: #3c3c3c;
 }
-/* line 156, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .top-search-form input[type="text"]::placeholder {
   font-size: 30px;
   font-weight: 700;
   color: #3c3c3c;
 }
-/* line 162, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .top-search-form .top-search-button {
   font: 700 16px Montserrat;
   background-color: #135ec5;
@@ -231,57 +225,57 @@ body {
   padding: 25px 75px;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #bmw-series-section {
   background-color: #fff;
   overflow: hidden;
 }
-/* line 177, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 #bmw-series-section .bmw-top-text {
   padding-top: 60px;
   text-align: center;
   color: #c1c1c1;
   font-size: 18px;
 }
-/* line 184, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 #bmw-series-section .auto-logos {
   margin-top: 75px;
   padding-bottom: 60px;
   float: left;
   border-bottom: 1px solid #c1c1c1;
 }
-/* line 190, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 #bmw-series-section .auto-logos li {
   float: left;
   padding-left: 100px;
   padding-right: 85px;
   display: block;
 }
-/* line 199, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 #bmw-series-section .bmw-series-text {
   width: 40%;
   float: right;
   margin-top: 175px;
 }
-/* line 204, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 #bmw-series-section .bmw-series-text a {
   text-decoration: none;
   color: #fff;
 }
-/* line 209, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 #bmw-series-section .bmw-series-text .bmw-series-header {
   font-weight: 700;
   font-size: 60px;
   color: #135ec5;
 }
-/* line 215, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 #bmw-series-section .bmw-series-text .bmw-descrip {
   font: 300 16px Open Sans;
   color: #c1c1c1;
   padding-top: 50px;
   line-height: 50px;
 }
-/* line 222, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 #bmw-series-section .bmw-series-text .bmw-series-button {
   display: inline-block;
   font-weight: 700;
@@ -292,13 +286,13 @@ body {
   padding: 25px 30px;
   border-radius: 50px;
 }
-/* line 234, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 #bmw-series-section .bmw-series-img {
   margin-top: 150px;
   float: left;
   width: 60%;
 }
-/* line 239, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 #bmw-series-section .bmw-series-img .bmw-back-text {
   color: #fff;
   text-shadow: 10px 10px 10px #f7f7f7;
@@ -307,11 +301,11 @@ body {
   font-size: 175px;
   text-transform: uppercase;
 }
-/* line 248, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 #bmw-series-section .bmw-series-img .series {
   padding-left: 295px;
 }
-/* line 252, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 #bmw-series-section .bmw-series-img img {
   position: relative;
   z-index: 1000;
@@ -319,11 +313,11 @@ body {
   bottom: 250px;
 }
 
-/* line 261, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 #announcement-section {
   background: #135ec5;
 }
-/* line 266, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 #announcement-section .announcement-header {
   text-align: center;
   font-weight: 700;
@@ -331,16 +325,16 @@ body {
   font-size: 60px;
   padding-top: 150px;
 }
-/* line 274, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 #announcement-section a {
   text-decoration: none;
   color: #fff;
 }
-/* line 279, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 #announcement-section .add-now-button-container {
   text-align: center;
 }
-/* line 283, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 #announcement-section .add-now-button {
   display: inline-block;
   text-align: center;
@@ -351,7 +345,7 @@ body {
   border-radius: 50px;
   padding: 20px 60px;
 }
-/* line 294, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 #announcement-section img {
   position: relative;
   z-index: 1000;
@@ -359,12 +353,12 @@ body {
   top: 100px;
 }
 
-/* line 303, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 #ads-section {
   background-color: #fff;
   overflow: hidden;
 }
-/* line 307, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 #ads-section .big-ad {
   float: right;
   background: linear-gradient(to right, #fff 0%, #fff 60%, #135ec5 60%, #135ec5 100%);
@@ -374,34 +368,34 @@ body {
   margin-bottom: 150px;
 }
 
-/* line 319, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 .big-ad .big-ad-left {
   float: left;
   width: 40%;
   margin-top: 60px;
   margin-left: 60px;
 }
-/* line 325, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .big-ad .big-ad-left .big-ad-top-text {
   font-weight: 700;
   font-size: 14px;
   color: #e2e2e2;
 }
-/* line 331, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .big-ad .big-ad-left .big-ad-price {
   font-weight: 700;
   font-size: 30px;
   color: #16ad2c;
   float: right;
 }
-/* line 338, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 .big-ad .big-ad-left .big-ad-header {
   padding-top: 140px;
   font-weight: 700;
   font-size: 30px;
   color: #135ec5;
 }
-/* line 346, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 .big-ad .big-ad-left .big-ad-descrip {
   padding-top: 50px;
   line-height: 50px;
@@ -410,12 +404,12 @@ body {
   font-size: 16px;
   color: #c1c1c1;
 }
-/* line 355, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 .big-ad .big-ad-left a {
   text-decoration: none;
   color: #fff;
 }
-/* line 360, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
 .big-ad .big-ad-left .big-ad-order-button {
   margin-top: 80px;
   margin-bottom: 95px;
@@ -428,16 +422,16 @@ body {
   font-size: 16px;
   text-transform: uppercase;
 }
-/* line 374, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 .big-ad .big-ad-right {
   margin-top: 60px;
 }
-/* line 377, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 .big-ad .big-ad-right a {
   text-decoration: none;
   color: #135ec5;
 }
-/* line 382, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .big-ad .big-ad-right .big-ad-fresh-button {
   float: right;
   margin-right: 30px;
@@ -447,7 +441,7 @@ body {
   padding: 10px 20px;
   border-radius: 50px;
 }
-/* line 392, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 .big-ad .big-ad-right img {
   float: right;
   height: 365px;
@@ -455,7 +449,7 @@ body {
   margin-top: 80px;
 }
 
-/* line 402, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 .small-ad {
   position: relative;
   float: left;
@@ -464,7 +458,7 @@ body {
   background: linear-gradient(to bottom, #135ec5 0%, #135ec5 35%, #fff 35%, #fff 100%);
   box-shadow: 0 0 50px #e2e2e2;
 }
-/* line 411, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .small-ad .furie {
   position: relative;
   z-index: 1;
@@ -476,12 +470,12 @@ body {
   text-transform: uppercase;
   text-shadow: 0 0 1px #4479c2;
 }
-/* line 423, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 .small-ad a {
   text-decoration: none;
   color: #135ec5;
 }
-/* line 428, ../sass/screen.scss */
+/* line 425, ../sass/screen.scss */
 .small-ad .small-ad-fresh-button {
   position: relative;
   z-index: 100;
@@ -494,21 +488,21 @@ body {
   padding: 10px 20px;
   border-radius: 50px;
 }
-/* line 441, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 .small-ad img {
   position: relative;
   z-index: 1000;
   left: 100px;
   bottom: 90px;
 }
-/* line 448, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 .small-ad .small-ad-header {
   text-align: center;
   font-weight: 700;
   font-size: 30px;
   color: black;
 }
-/* line 455, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 .small-ad .small-ad-category {
   margin-top: 20px;
   display: block;
@@ -517,14 +511,14 @@ body {
   font-size: 14px;
   color: #135ec5;
 }
-/* line 464, ../sass/screen.scss */
+/* line 461, ../sass/screen.scss */
 .small-ad .small-ad-descrip {
   text-align: center;
   font-weight: 300;
   margin-top: 20px;
   color: #c1c1c1;
 }
-/* line 471, ../sass/screen.scss */
+/* line 468, ../sass/screen.scss */
 .small-ad .small-ad-price {
   display: inline-block;
   font-weight: 700;
@@ -533,12 +527,12 @@ body {
   margin-left: 50px;
   margin-top: 30px;
 }
-/* line 482, ../sass/screen.scss */
+/* line 479, ../sass/screen.scss */
 .small-ad .small-ad-bottom a {
   text-decoration: none;
   color: #fff;
 }
-/* line 488, ../sass/screen.scss */
+/* line 485, ../sass/screen.scss */
 .small-ad .small-ad-more-button {
   float: right;
   margin-top: 30px;
@@ -552,7 +546,7 @@ body {
   border-radius: 50px;
 }
 
-/* line 505, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 #search-section .search-form-container {
   text-align: center;
   margin: 150px 250px;
@@ -560,7 +554,7 @@ body {
   box-shadow: 0 0 50px #e2e2e2;
 }
 
-/* line 515, ../sass/screen.scss */
+/* line 512, ../sass/screen.scss */
 .main-search-form .top-main-search-field {
   border-width: thin;
   border-color: #c1c1c1;
@@ -574,37 +568,37 @@ body {
   width: 295px;
   background-color: #fff;
 }
-/* line 528, ../sass/screen.scss */
+/* line 525, ../sass/screen.scss */
 .main-search-form .top-main-search-field::-moz-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #c1c1c1;
 }
-/* line 534, ../sass/screen.scss */
+/* line 531, ../sass/screen.scss */
 .main-search-form .top-main-search-field::-webkit-input-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #c1c1c1;
 }
-/* line 540, ../sass/screen.scss */
+/* line 537, ../sass/screen.scss */
 .main-search-form .top-main-search-field:-ms-input-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #c1c1c1;
 }
-/* line 546, ../sass/screen.scss */
+/* line 543, ../sass/screen.scss */
 .main-search-form .top-main-search-field::-ms-input-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #c1c1c1;
 }
-/* line 552, ../sass/screen.scss */
+/* line 549, ../sass/screen.scss */
 .main-search-form .top-main-search-field::placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #c1c1c1;
 }
-/* line 558, ../sass/screen.scss */
+/* line 555, ../sass/screen.scss */
 .main-search-form .top-main-search-field-location {
   border-width: thin;
   border-color: #c1c1c1;
@@ -617,37 +611,37 @@ body {
   width: 295px;
   background: #fff url("../images/img_location.png") no-repeat 100% 50%;
 }
-/* line 571, ../sass/screen.scss */
+/* line 568, ../sass/screen.scss */
 .main-search-form .top-main-search-field-location::-moz-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: black;
 }
-/* line 577, ../sass/screen.scss */
+/* line 574, ../sass/screen.scss */
 .main-search-form .top-main-search-field-location::-webkit-input-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: black;
 }
-/* line 583, ../sass/screen.scss */
+/* line 580, ../sass/screen.scss */
 .main-search-form .top-main-search-field-location:-ms-input-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: black;
 }
-/* line 589, ../sass/screen.scss */
+/* line 586, ../sass/screen.scss */
 .main-search-form .top-main-search-field-location::-ms-input-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: black;
 }
-/* line 595, ../sass/screen.scss */
+/* line 592, ../sass/screen.scss */
 .main-search-form .top-main-search-field-location::placeholder {
   font-size: 18px;
   font-weight: 700;
   color: black;
 }
-/* line 602, ../sass/screen.scss */
+/* line 599, ../sass/screen.scss */
 .main-search-form .auto-logos-main-search {
   text-align: center;
   margin-top: 75px;
@@ -655,7 +649,7 @@ body {
   float: left;
   border-top: 1px solid #c1c1c1;
 }
-/* line 609, ../sass/screen.scss */
+/* line 606, ../sass/screen.scss */
 .main-search-form .auto-logos-main-search li {
   float: left;
   display: block;
@@ -663,12 +657,12 @@ body {
   padding-left: 35px;
   padding-right: 80px;
 }
-/* line 618, ../sass/screen.scss */
+/* line 615, ../sass/screen.scss */
 .main-search-form a {
   text-decoration: none;
   color: #fff;
 }
-/* line 623, ../sass/screen.scss */
+/* line 620, ../sass/screen.scss */
 .main-search-form .advanced-search-button {
   display: inline-block;
   margin-top: 100px;
@@ -679,7 +673,7 @@ body {
   border-radius: 20px;
 }
 
-/* line 636, ../sass/screen.scss */
+/* line 633, ../sass/screen.scss */
 .detailed-characteristics .top-main-search-field-detailed {
   border-width: thin;
   border-color: #c1c1c1;
@@ -693,37 +687,37 @@ body {
   width: 295px;
   background-color: #135ec5;
 }
-/* line 649, ../sass/screen.scss */
+/* line 646, ../sass/screen.scss */
 .detailed-characteristics .top-main-search-field-detailed::-moz-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #c1c1c1;
 }
-/* line 655, ../sass/screen.scss */
+/* line 652, ../sass/screen.scss */
 .detailed-characteristics .top-main-search-field-detailed::-webkit-input-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #c1c1c1;
 }
-/* line 661, ../sass/screen.scss */
+/* line 658, ../sass/screen.scss */
 .detailed-characteristics .top-main-search-field-detailed:-ms-input-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #c1c1c1;
 }
-/* line 667, ../sass/screen.scss */
+/* line 664, ../sass/screen.scss */
 .detailed-characteristics .top-main-search-field-detailed::-ms-input-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #c1c1c1;
 }
-/* line 673, ../sass/screen.scss */
+/* line 670, ../sass/screen.scss */
 .detailed-characteristics .top-main-search-field-detailed::placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #c1c1c1;
 }
-/* line 680, ../sass/screen.scss */
+/* line 677, ../sass/screen.scss */
 .detailed-characteristics .top-main-search-field-transmission {
   border-width: thin;
   border-color: #c1c1c1;
@@ -736,37 +730,37 @@ body {
   width: 295px;
   background-color: #135ec5;
 }
-/* line 692, ../sass/screen.scss */
+/* line 689, ../sass/screen.scss */
 .detailed-characteristics .top-main-search-field-transmission::-moz-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
 }
-/* line 698, ../sass/screen.scss */
+/* line 695, ../sass/screen.scss */
 .detailed-characteristics .top-main-search-field-transmission::-webkit-input-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
 }
-/* line 704, ../sass/screen.scss */
+/* line 701, ../sass/screen.scss */
 .detailed-characteristics .top-main-search-field-transmission:-ms-input-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
 }
-/* line 710, ../sass/screen.scss */
+/* line 707, ../sass/screen.scss */
 .detailed-characteristics .top-main-search-field-transmission::-ms-input-placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
 }
-/* line 716, ../sass/screen.scss */
+/* line 713, ../sass/screen.scss */
 .detailed-characteristics .top-main-search-field-transmission::placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
 }
-/* line 723, ../sass/screen.scss */
+/* line 720, ../sass/screen.scss */
 .detailed-characteristics .main-search-button {
   font: 700 16px Montserrat;
   margin-top: 50px;

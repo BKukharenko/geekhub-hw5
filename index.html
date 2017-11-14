@@ -5,7 +5,6 @@
 	<meta charset="utf-8">
 	<title>Cars Landing Page</title>
 	<link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
-  <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
   <!--[if IE]>
       <link href="/stylesheets/ie.css" media="screen, projection" rel="styleshee
 t" type="text/css" />
@@ -16,19 +15,18 @@ t" type="text/css" />
 	<header id="main-header">
 		<div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
 		<ul class="contacts-list">
-			<li class="email"><address>contact@furie.co</address></li>
-			<li class="phone"><address>+48 605 320 091</address></li>
+			<li class="email"><a href="mailto:contact@furie.co">contact@furie.co</a></li>
+			<li class="phone"><a href="#">+48 605 320 091</a></li>
 			<li class="log-in"><a href="#">Log In</a></li>
 		</ul>
 	</header>
 <!--Top Mercedes Section-->
 	<section id="top-mercedes-section">
-		<p class="background-text">Change</p> <p class="background-text">Your <span class="car-text">Car</span></p>
 		<img src="images/img_top_mercedes.png" alt="mercedes">
 		<span class="vertical-dots">&#8942;</span>
 		<p class="top-car-buying-text">Car buying made simple</p>
 		<div class="top-search-form">
-		<form action="#">
+		<form action="#"><!-- Отступы -->
 				<input type="text" name="Make" placeholder="Make" class="top-search-field">
 				<input type="text" name="Model" placeholder="Model" class="top-search-field">
 				<input type="text" name="City" placeholder="City" class="top-search-field">
@@ -38,7 +36,7 @@ t" type="text/css" />
 	</section>
 <!--BMW Series Section-->
 	<section id="bmw-series-section">
-		<p class="bmw-top-text">Take your best</p>
+		<h1 class="bmw-top-text">Take your best</h1>
 		<ul class="auto-logos">
 			<li><img src="images/img_mazda.png" alt="mazda logo"></li>
 			<li><img src="images/img_hyundai.png" alt="hyundai logo"></li>
@@ -53,12 +51,10 @@ t" type="text/css" />
 			<img src="images/img_bmw_series.png" alt="bmw car">
 		</div>
 		<div class="bmw-series-text">
-			<header class="bmw-series-header">
-			<h1>BMW Series</h1>
-			</header>
+			<h1 class="bmw-series-header">BMW Series</h1>
 			<p class="bmw-descrip">Lorem ipsum dolor sit amet, consecteur adipiscing elit. In sed magna arcu.
 			Quisque in augue faucibus, eleifend quam vitae, euismod enim. Donec egestas lacus ut euismod sollicitudin</p>
-			<span class="bmw-series-button"><a href="#">View All Models</a></span>
+			<a class="bmw-series-button" href="#">View All Models</a>
 		</div>
 	</section>
 <!--Announcement section-->
@@ -76,7 +72,7 @@ t" type="text/css" />
 		<div class="small-ad">
 			<div class="small-ad-top">
 			<div class="small-ad-fresh-button"><a href="#">Fresh</a></div>
-			<div class="furie">Furie</div>
+			<p class="furie">Furie</p>
 			<img src="images/img_smallad_mercedes.png" alt="Mercedes Car">
 			</div>
 			<div class="small-ad-bottom">
@@ -104,20 +100,20 @@ t" type="text/css" />
 <!--Search section-->
 	<section id="search-section">
 		<div class="search-form-container">
-			<form class="main-search-form">
+			<form class="main-search-form" action="#">
 				<fieldset class="main-characteristics">
 					<input type="text" name="Make" placeholder="Make" class="top-main-search-field">
 					<input type="text" name="Location" placeholder="Warsaw, Poland." class="top-main-search-field-location">
 					<input type="text" name="Category" placeholder="Category" class="top-main-search-field">
 					<input type="text" name="Keywords" placeholder="Keywords" class="top-main-search-field">
 					<ul class="auto-logos-main-search">
-						<li><img src="images/img_mazda.png" alt="mazda logo"></li>
-						<li><img src="images/img_hyundai.png" alt="hyundai logo"></li>
-						<li><img src="images/img_bmw.png" alt="bmw logo"></li>
-						<li><img src="images/img_volvo.png" alt="volvo logo"></li>
-						<li><img src="images/img_chevrolet.png" alt="chevrolet logo"></li>
-						<li><img src="images/img_mercedes.png" alt="mercedes logo"></li>
-						<li><img src="images/img_honda.png" alt="honda logo"></li>
+						<li><label><img src="images/img_mazda.png" alt="mazda logo"></label></li>
+						<li><label><img src="images/img_hyundai.png" alt="hyundai logo"></label></li>
+						<li><label><img src="images/img_bmw.png" alt="bmw logo"></label></li>
+						<li><label><img src="images/img_volvo.png" alt="volvo logo"></label></li>
+						<li><label><img src="images/img_chevrolet.png" alt="chevrolet logo"></label></li>
+						<li><label><img src="images/img_mercedes.png" alt="mercedes logo"></label></li>
+						<li><label><img src="images/img_honda.png" alt="honda logo"></label></li>
 					</ul>
 					<input type="text" name="price-from" placeholder="Price from" class="top-main-search-field">
 					<input type="text" name="price-to" placeholder="To" class="top-main-search-field">

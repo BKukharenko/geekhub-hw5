@@ -34,12 +34,6 @@ body {
 		float: right;
 		color: $white;
 
-		a {
-			text-transform: uppercase;
-			color: $blue;
-			text-decoration: none;
-		}
-
 		li {
 			margin-top: 70px;
 			padding-left: 40px;
@@ -51,11 +45,22 @@ body {
 			padding-right: 40px;
 			background: url('../images/img_email.png') no-repeat 0% 50%;
 			
+			a{
+			color: $white;
+			text-transform: uppercase;
+			text-decoration: none;
+			}
 		}
 
 		.phone {
 			padding-right: 40px;
 			background: url('../images/img_phone.png') no-repeat 0% 50%;
+
+			a {
+			color: $white;
+			text-transform: uppercase;
+			text-decoration: none;
+			}
 		}
 
 		.log-in {
@@ -64,34 +69,25 @@ body {
 			background: $white;
 			border-radius: 80px;
 
+			a {
+			text-transform: uppercase;
+			color: $blue;
+			text-decoration: none;
+			}
+
 		}
 	}
 }
 
 #top-mercedes-section {
 	padding-top: 100px;
-	background-color: $light-black;
-
-	.background-text {
-		overflow: hidden;
-		line-height: 160px;
-		text-transform: uppercase;
-		font-size: 185px;
-		font-weight: 700;
-		text-align: center;
-		color: #161513;
-
-		.car-text {
-			padding-left: 400px;
-
-		}
-	}
+	background: $light-black url('../images/img_top_background_text.png') no-repeat;
 
 	img {
-		position: relative;
-		z-index: 1000;
-		left: 550px;
-		bottom: 250px;
+		display: block;
+		margin: 0 auto;
+		padding-top: 150px;
+		padding-right: 200px;
 	}
 
 	.top-car-buying-text {
@@ -99,7 +95,7 @@ body {
 		font-weight: 700;
 		color: $white;
 		font-size: 18px;
-		padding-top: 0px;
+		margin-top: 150px;
 	}
 
 	.vertical-dots {
@@ -108,9 +104,6 @@ body {
   			color: $gray;
   			margin-right: 80px;
 
-  			&:nth-child(2) {	//Попытался сделать второй маркер синим, но почему-то не сработало
-  				color: $blue;
-  			}
 	}
 
 }
@@ -290,7 +283,7 @@ body {
 		margin-top: 85px;
 		font-weight: 700;
 		text-transform: uppercase;
-		border: 3px $white; solid;
+		border: 3px $white solid;
 		border-radius: 50px;
 		padding: 20px 60px;
 	}
@@ -408,7 +401,7 @@ body {
 	float: left;
 	margin-top: 250px;
 	margin-left: 160px;
-	background: linear-gradient(to bottom, $blue 0%,$blue 35%, $white; 35%, $white; 100%);
+	background: linear-gradient(to bottom, $blue 0%,$blue 35%, $white 35%, $white 100%);
 	box-shadow: 0 0 50px #e2e2e2;
 
 
@@ -509,7 +502,7 @@ body {
 	.search-form-container {
 		text-align: center;
 		margin: 150px 250px;
-		background: linear-gradient(to bottom, $white; 0%, $white; 60%, $blue; 60%, $blue; 100%);
+		background: linear-gradient(to bottom, $white 0%, $white 60%, $blue 60%, $blue 100%);
 		box-shadow: 0 0 50px #e2e2e2;
 	}
 }
@@ -569,7 +562,7 @@ body {
 		margin-right: 25px;
 		height: 45px;
 		width: 295px;
-		background: $white; url('../images/img_location.png') no-repeat 100% 50%;
+		background: $white url('../images/img_location.png') no-repeat 100% 50%;
 
 
 			&::-moz-placeholder {
